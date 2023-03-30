@@ -1,0 +1,17 @@
+click
+Flask
+Flask-JWT-Extended
+Flask-RESTful
+Jinja2
+MarkupSafe
+marshmallow
+psycopg2-binary
+python-dotenv
+PyJWT
+pytest
+six
+SQLAlchemy
+Werkzeug
+flask_sqlalchemy
+flask_bcrypt
+bcrypt
