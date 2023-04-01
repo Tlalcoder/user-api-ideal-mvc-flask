@@ -11,7 +11,7 @@ PyJWT
 pytest
 six
 SQLAlchemy
-Werkzeug
 flask_sqlalchemy
 flask_bcrypt
 bcrypt
+flask-restx
