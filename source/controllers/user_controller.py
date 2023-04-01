@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from source.services.user_service import UserService
+from flask_restx import Namespace, Resource, fields
 
 user_blueprint = Blueprint('user', __name__)
 
