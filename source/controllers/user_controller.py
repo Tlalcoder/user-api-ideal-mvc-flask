@@ -48,10 +48,3 @@ def login():
     }), 200
 
 
-@user_blueprint.route('/protected', methods=['GET'])
-@jwt_required()
-def protected():
-    get_jwt_identity()
-    return jsonify({
-        'message': 'Access granted',
-    }), 200
