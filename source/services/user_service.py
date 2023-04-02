@@ -39,3 +39,12 @@ class UserService:
     def serialize_user(user):
         user_schema = UserSchema()
         return user_schema.dump(user)
+
+    def delete_user(self, user_id):
+        user = self.get_user_by_id(user_id)
+        if not user:
+            return False
+
+        db.session.delete(user)
+        db.session.commit()
+        return True
