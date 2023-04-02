@@ -16,6 +16,16 @@ class UserService:
         return User.query.filter_by(email=email).first()
 
     @staticmethod
+    def get_user_by_id(user_id):
+        user = User.query.filter_by(id=user_id).first()
+        return user
+
+    @staticmethod
+    def get_all_users():
+        users = User.query.all()
+        return users
+
+    @staticmethod
     def update_password(user, password):
         hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
         user.password = hashed_password
