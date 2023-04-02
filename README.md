@@ -13,17 +13,15 @@ Copy code
 
 2. Install the required dependencies using the `requirements.txt` file:
 pip install -r requirements.txt
+3. Initialize the database:
+flask db init
+flask db migrate
+flask db upgrade
 
-markdown
-Copy code
-
-3. Run the application:
+4. Run the application:
 flask run
 
-sql
-Copy code
-
-4. Navigate to `http://localhost:5000/api/users` to view the API documentation and available endpoints.
+5. Navigate to `http://localhost:5000/api/users` to view the API documentation and available endpoints.
 
 ## Endpoints
 
